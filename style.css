@@ -20,7 +20,7 @@
 /* this is nav bar logo or school logo inside nav bar */
 .navbar-logo {
     line-height: 80px;
-    width: 100px;
+    width: 61px;
     padding: 12px 12px;
     cursor: pointer;
 }
@@ -29,8 +29,10 @@
 
 .navbar ul li {
     float: right;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-right: 12px;
+    margin: 2px;
+    text-transform: uppercase;
 }
 
 
