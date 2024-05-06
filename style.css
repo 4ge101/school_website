@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Start to make nav bar */
 .navbar {
     width: 100%;
@@ -25,8 +32,6 @@
     cursor: pointer;
 }
 
-
-
 .navbar ul li {
     float: right;
     padding-top: 20px;
@@ -35,13 +40,10 @@
     text-transform: uppercase;
 }
 
-
 .navbar ul li a {
     text-decoration: none;
     color: white;
 }
-
-
 
 .navbar a {
     color: white;
@@ -51,7 +53,6 @@
     text-align: center;
 }
 
-
 .navbar a:hover {
     background-color: #626567;
     cursor: pointer;
@@ -60,15 +61,12 @@
 
 /* ending of nav bars */
 
-
-
 /* header */
 .head {
     margin: 22px;
     margin-top: 100px;
 
 }
-
 
 /* this is image of about us */
 .img2 {
@@ -83,4 +81,105 @@
 .text {
     position: absolute;
     width: 100%;
+}
+
+
+.footer {
+    background-color: #17202A;
+    padding: 70px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    position: relative;
+    left: 40px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 8px;
+}
+
+.footer-col .social-link a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+    position: relative;
+    left: 35px;
+}
+
+.footer-col .social-link a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+/* responsive */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
 }
