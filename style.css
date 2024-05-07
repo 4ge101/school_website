@@ -83,10 +83,12 @@ body {
     width: 100%;
 }
 
-
+/* this is the starting footer of the website */
 .footer {
     background-color: #17202A;
     padding: 70px 0;
+    margin-top: 830px;
+    border-top-left-radius: 188px;
 }
 
 .container {
@@ -183,3 +185,4 @@ ul {
         width: 100%;
     }
 }
+/* ending of footer */
