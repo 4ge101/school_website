@@ -21,7 +21,8 @@ body {
     margin: 0;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 10px 9px 10px 10px gray;
+    box-shadow: 3px -6px 18px -4px #6a6464;
+    ;
 }
 
 /* this is nav bar logo or school logo inside nav bar */
@@ -58,7 +59,9 @@ body {
     cursor: pointer;
     border-radius: 20px;
 }
+
 /* ending of nav bars */
+
 
 /* start image slider*/
 .container-box{
@@ -68,7 +71,7 @@ body {
 .slider-wrapper{
     position: relative;
     max-width: 48rem;
-    margin: 0 auto;
+    margin: 104px auto;
 }
 
 .slider{
@@ -108,8 +111,8 @@ body {
 
 .slider-nav a:hover{
     opacity: 1;
-}  */
- /* ending of slide bar image */
+} 
+/* ending of slide bar image */
 
 
 /* header */
@@ -118,19 +121,18 @@ body {
     margin-top: 100px;
 }
 
-/* this is image of about us */
-.img2 {
-    float: right;
+/* this is text about school */
+.header {
+    margin: 22px;
     position: relative;
-    top: -4px;
-    left: 10px;
-    height: 200px;
-    width: 330px;
+    top: 40px;
 }
+
 
 .text {
     position: absolute;
     width: 100%;
+    margin: 22px;
 }
 
 /* this is the starting footer of the website */
