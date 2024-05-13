@@ -196,11 +196,20 @@ ul {
 }
 
 
+/* starting image animation slider */
 .card-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
     flex-wrap: wrap;
     margin-top: 360px;
+    overflow: hidden;
+    animation: slide 18s linear infinite; 
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0); } /* Start from the first card */
+    100% { transform: translateX(calc(-100% - 20px)); } /* Move to the end, including card margin */
 }
 
 .card{
@@ -211,6 +220,7 @@ ul {
     overflow: hidden;
     box-shadow: 0px 2px 4px rgb(0, 0, 0,0.2);
     margin: 20px;
+    margin-right: 20px;
 }
 
 .card img{
@@ -226,3 +236,4 @@ ul {
     font-size: 16px;
     margin-bottom: -8px;
 }
+/* ending animtion image slider */
