@@ -206,21 +206,16 @@ ul {
     animation: slide 18s linear infinite; 
 }
 
-
-@keyframes slide {
-    0% { transform: translateX(0); } /* Start from the first card */
-    100% { transform: translateX(calc(-100% - 20px)); } /* Move to the end, including card margin */
-}
-
 .card{
     /* width: 325px;*/  /*for big size */
-    width: 179px;
+    width: 180px;
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgb(0, 0, 0,0.2);
     margin: 20px;
     margin-right: 20px;
+    animation: slide 18s linear infinite; 
 }
 
 .card img{
@@ -235,5 +230,10 @@ ul {
 .card-content h3{
     font-size: 16px;
     margin-bottom: -8px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); } /* Start from the first card */
+    100% { transform: translateX(calc(-100% - 20px)); } /* Move to the end, including card margin */
 }
 /* ending animtion image slider */
