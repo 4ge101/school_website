@@ -197,45 +197,55 @@ ul {
 
 
 /* starting image animation slider */
-.card-container{
-    /* display: flex; */
-    display: grid;
-    /* justify-content: flex-start;  */
-    flex-wrap: wrap;
-    margin-top: 360px;
+.slide-container {
     overflow: hidden;
-    animation: slide 18s linear infinite; 
-    place-items: center;
+    position: relative;
+    top: 20em;
 }
 
-.card{
-    /* width: 325px;*/  /*for big size */
-    width: 15em;
+.slider {
+    display: flex;
+    animation: slide 18s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.card {
+    width: auto;
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgb(0, 0, 0,0.2);
-    margin: 20px;
-    margin-right: 20px;
-    animation: slide 18s linear infinite; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.card img{
-    width: 100%;
-    height: auto;
+.card img {
+    width: 18em;
+    height: 18em;
+    object-fit: cover;
+    /* Ensure image covers the entire card */
+
 }
 
-.card-content{
+.card-content {
     padding: 16px;
 }
 
-.card-content h3{
+.card-content h3 {
     font-size: 16px;
     margin-bottom: -8px;
 }
 
 @keyframes slide {
-    0% { transform: translateX(0); } /* Start from the first card */
-    100% { transform: translateX(calc(-100% - 20px)); } /* Move to the end, including card margin */
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
+
 /* ending animtion image slider */
