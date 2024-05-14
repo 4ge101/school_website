@@ -198,17 +198,19 @@ ul {
 
 /* starting image animation slider */
 .card-container{
-    display: flex;
-    justify-content: flex-start; 
+    /* display: flex; */
+    display: grid;
+    /* justify-content: flex-start;  */
     flex-wrap: wrap;
     margin-top: 360px;
     overflow: hidden;
     animation: slide 18s linear infinite; 
+    place-items: center;
 }
 
 .card{
     /* width: 325px;*/  /*for big size */
-    width: 180px;
+    width: 15em;
     background-color: #FFFFFF;
     border-radius: 8px;
     overflow: hidden;
