@@ -60,8 +60,8 @@ body {
     border-radius: 20px;
 }
 
-@media (max-width: 767px){
-    .navbar-logo{
+@media (max-width: 767px) {
+    .navbar-logo {
         position: relative;
         left: 35px;
         top: 10px;
@@ -73,19 +73,20 @@ body {
 /* school image responsive */
 @media (min-width: 768px) {
     img {
-      bottom: 100px;
-      left: 2px;
+        bottom: 100px;
+        left: 2px;
     }
-  }
+}
 
-  /* Media query for mobile devices */
-  @media (max-width: 767px) {
+/* Media query for mobile devices */
+@media (max-width: 767px) {
     img {
-      top: 100px;
-      left: calc(50% - 5px); /* Adjust as needed */
-      transform: translateX(-50%);
+        top: 100px;
+        left: calc(50% - 5px);
+        /* Adjust as needed */
+        transform: translateX(-50%);
     }
-  }
+}
 
 
 /* header */
@@ -249,11 +250,9 @@ ul {
 }
 
 .card img {
-    width: 18em;
-    height: 18em;
     object-fit: cover;
-    /* Ensure image covers the entire card */
-
+    position: relative;
+    top: 2px;
 }
 
 .card-content {
@@ -272,6 +271,27 @@ ul {
 
     100% {
         transform: translateX(-100%);
+    }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .slide-container {
+        top: 0;
+    }
+
+    .card img {
+        height: 285px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) {
+    .card img {
+        max-width: 52vh;
+        position: relative;
+        height: 55vh;
+        left: 45px;
     }
 }
 
