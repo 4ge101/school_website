@@ -60,7 +60,33 @@ body {
     border-radius: 20px;
 }
 
+@media (max-width: 767px){
+    .navbar-logo{
+        position: relative;
+        left: 35px;
+        top: 10px;
+    }
+}
+
 /* ending of nav bars */
+
+/* school image responsive */
+@media (min-width: 768px) {
+    img {
+      bottom: 100px;
+      left: 2px;
+    }
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    img {
+      top: 100px;
+      left: calc(50% - 5px); /* Adjust as needed */
+      transform: translateX(-50%);
+    }
+  }
+
 
 /* header */
 .head {
@@ -72,11 +98,12 @@ body {
 .header {
     margin: 22px;
     position: relative;
-    top: 40px;
+    top: 95px;
 }
 
 .text {
-    position: absolute;
+    position: relative;
+    top: 78px;
     margin: 22px;
     width: 90%;
 }
