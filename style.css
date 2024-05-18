@@ -109,6 +109,22 @@ body {
     width: 90%;
 }
 
+@media only screen and (min-width: 601px) {
+    .header {
+        margin-top: -150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .school-image {
+        position: relative;
+        bottom: 63px;
+        left: 5px;
+        margin: 3px;
+
+    }
+}
+
 /* this is the starting footer of the website */
 .footer {
     background-color: #17202A;
@@ -228,7 +244,7 @@ ul {
 .slide-container {
     overflow: hidden;
     position: relative;
-    top: 20em;
+    top: 8em;
 }
 
 .slider {
@@ -261,7 +277,7 @@ ul {
 
 .card-content h3 {
     font-size: 16px;
-    margin-bottom: -8px;
+    margin-bottom: 3px;
 }
 
 @keyframes slide {
@@ -277,7 +293,7 @@ ul {
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
     .slide-container {
-        top: 0;
+        top: 7em;
     }
 
     .card img {
@@ -290,8 +306,8 @@ ul {
     .card img {
         max-width: 52vh;
         position: relative;
-        height: 55vh;
-        left: 45px;
+        height: 50vh;
+        left: -3px;
     }
 }
 
