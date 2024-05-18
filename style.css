@@ -8,63 +8,101 @@ body {
 /* Start to make nav bar */
 .navbar {
     width: 100%;
-    height: 80px;
-    align-items: center;
-    padding-bottom: 150px;
-}
-
-.navbar ul {
-    list-style-type: none;
     background-color: #17202A;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 10px;
     box-shadow: 3px -6px 18px -4px #6a6464;
-    ;
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    position: relative;
 }
 
-/* this is nav bar logo or school logo inside nav bar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar-logo {
-    line-height: 80px;
     width: 61px;
-    padding: 12px 12px;
     cursor: pointer;
 }
 
-.navbar ul li {
-    float: right;
-    padding-top: 20px;
-    padding-right: 12px;
-    margin: 2px;
-    text-transform: uppercase;
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
+.navbar-links li {
+    margin: 0;
 }
 
-.navbar a {
-    color: white;
+.navbar-links a {
     text-decoration: none;
+    color: white;
     padding: 12px;
     display: block;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.navbar a:hover {
+.navbar-links a:hover {
     background-color: #626567;
     cursor: pointer;
     border-radius: 20px;
 }
 
+/* Menu icon for mobile */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Responsive styles */
 @media (max-width: 767px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .navbar-logo {
-        position: relative;
-        left: 35px;
-        top: 10px;
+        margin-bottom: 12px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-links a {
+        padding: 12px;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* Show the menu icon */
+    .menu-icon {
+        display: block;
+        color: rgb(255, 255, 255); /* Change this to red */
+    }
+
+    /* Show the menu when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + .navbar-logo + .navbar-links {
+        display: flex;
     }
 }
 
