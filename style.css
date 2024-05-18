@@ -27,6 +27,15 @@ body {
     cursor: pointer;
 }
 
+/* this is for responsive logo of nav-bar */
+@media only screen and (max-width: 600px) {
+  .navbar-logo{
+    position: relative;
+    top: -3em;
+    left: -16em;
+  }
+}
+
 .navbar-links {
     list-style-type: none;
     margin: 0;
@@ -71,12 +80,12 @@ body {
 @media (max-width: 767px) {
     .navbar-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
-    .navbar-logo {
+    /* .navbar-logo {
         margin-bottom: 12px;
-    }
+    } */
 
     .navbar-links {
         flex-direction: column;
@@ -86,32 +95,33 @@ body {
 
     .navbar-links li {
         width: 100%;
+        position: relative;
+        left: -12px;
     }
 
     .navbar-links a {
         padding: 12px;
-        text-align: left;
+        text-align: center;
         width: 100%;
     }
 
     /* Show the menu icon */
     .menu-icon {
         display: block;
-        color: rgb(255, 255, 255); /* Change this to red */
+        color: rgb(255, 255, 255);
     }
 
     /* Show the menu when checkbox is checked */
-    #menu-toggle:checked + .menu-icon + .navbar-logo + .navbar-links {
+    #menu-toggle:checked+.menu-icon+.navbar-logo+.navbar-links {
         display: flex;
     }
 }
-
 /* ending of nav bars */
 
 /* school image responsive */
 @media (min-width: 768px) {
     img {
-        bottom: 100px;
+        bottom: -30px;
         left: 2px;
     }
 }
@@ -120,9 +130,6 @@ body {
 @media (max-width: 767px) {
     img {
         top: 100px;
-        left: calc(50% - 5px);
-        /* Adjust as needed */
-        transform: translateX(-50%);
     }
 }
 
@@ -147,12 +154,14 @@ body {
     width: 90%;
 }
 
+/* this is for text */
 @media only screen and (min-width: 601px) {
     .header {
-        margin-top: -150px;
+        margin-top: -33px;
     }
 }
 
+/* this is also for text  */
 @media only screen and (max-width: 600px) {
     .school-image {
         position: relative;
