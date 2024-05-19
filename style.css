@@ -112,19 +112,20 @@ body {
     }
 
     /* Show the menu when checkbox is checked */
-    #menu-toggle:checked ~ .navbar-links {
+    #menu-toggle:checked~.navbar-links {
         display: flex;
     }
 
     /* Toggle between hamburger and cross icon */
-    #menu-toggle:checked ~ .menu-icon .hamburger-icon {
+    #menu-toggle:checked~.menu-icon .hamburger-icon {
         display: none;
     }
 
-    #menu-toggle:checked ~ .menu-icon .cross-icon {
+    #menu-toggle:checked~.menu-icon .cross-icon {
         display: inline;
     }
 }
+
 /* Ending of nav bars */
 
 
@@ -175,7 +176,7 @@ body {
 @media only screen and (max-width: 600px) {
     .school-image {
         position: relative;
-        bottom: 63px;
+        bottom: 43px;
         left: 5px;
         margin: 3px;
 
