@@ -29,11 +29,11 @@ body {
 
 /* this is for responsive logo of nav-bar */
 @media only screen and (max-width: 600px) {
-  .navbar-logo{
-    position: relative;
-    top: -3em;
-    left: -16em;
-  }
+    .navbar-logo {
+        position: relative;
+        top: -3em;
+        left: -16em;
+    }
 }
 
 .navbar-links {
@@ -71,6 +71,10 @@ body {
     color: white;
 }
 
+.menu-icon .cross-icon {
+    display: none;
+}
+
 /* Hide the checkbox */
 #menu-toggle {
     display: none;
@@ -82,10 +86,6 @@ body {
         flex-direction: column;
         align-items: flex-end;
     }
-
-    /* .navbar-logo {
-        margin-bottom: 12px;
-    } */
 
     .navbar-links {
         flex-direction: column;
@@ -112,11 +112,21 @@ body {
     }
 
     /* Show the menu when checkbox is checked */
-    #menu-toggle:checked+.menu-icon+.navbar-logo+.navbar-links {
+    #menu-toggle:checked ~ .navbar-links {
         display: flex;
     }
+
+    /* Toggle between hamburger and cross icon */
+    #menu-toggle:checked ~ .menu-icon .hamburger-icon {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .menu-icon .cross-icon {
+        display: inline;
+    }
 }
-/* ending of nav bars */
+/* Ending of nav bars */
+
 
 /* school image responsive */
 @media (min-width: 768px) {
