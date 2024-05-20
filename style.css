@@ -8,18 +8,26 @@ body {
 /* Start to make nav bar */
 .navbar {
     width: 100%;
-    background-color: #17202A;
+    background-color: rgba(23, 32, 42, 0.8);
+    /* Semi-transparent background */
     box-shadow: 3px -6px 18px -4px #6a6464;
     border-radius: 10px;
-    padding: 12px;
+    padding: 0 16px;
+    /* Adjusted padding, remove vertical padding */
     box-sizing: border-box;
     position: relative;
+    height: 4em;
+    /* Fixed height */
+    z-index: 1000;
+    /* Ensure navbar is on top */
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+    /* Ensure it takes the full height of navbar */
 }
 
 .navbar-logo {
@@ -27,12 +35,13 @@ body {
     cursor: pointer;
 }
 
-/* this is for responsive logo of nav-bar */
+/* Responsive logo adjustment */
 @media only screen and (max-width: 600px) {
     .navbar-logo {
         position: relative;
         top: -3em;
         left: -16em;
+        width: 55px;
     }
 }
 
@@ -42,6 +51,16 @@ body {
     padding: 0;
     display: flex;
     gap: 20px;
+    z-index: 1001;
+    /* Ensure navbar links are on top */
+    background-color: rgba(23, 32, 42, 1);
+    /* Match the background of navbar */
+    border-radius: 9px;
+    transition: max-height 0.3s ease;
+    /* Smooth transition */
+    overflow: hidden;
+    max-height: 4em;
+    /* Match navbar height initially */
 }
 
 .navbar-links li {
@@ -51,7 +70,8 @@ body {
 .navbar-links a {
     text-decoration: none;
     color: white;
-    padding: 12px;
+    padding: 8px;
+    /* Adjusted padding */
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -85,24 +105,32 @@ body {
     .navbar-container {
         flex-direction: column;
         align-items: flex-end;
+        position: relative;
+        top: 8px;
     }
 
     .navbar-links {
         flex-direction: column;
         width: 100%;
-        display: none;
+        max-height: 0;
+        /* Start with hidden menu */
     }
 
     .navbar-links li {
         width: 100%;
         position: relative;
-        left: -12px;
+        position: relative;
+        bottom: 16px;
     }
 
     .navbar-links a {
-        padding: 12px;
+        padding: 8px;
+        /* Adjusted padding */
         text-align: center;
-        width: 100%;
+        width: 89%;
+        position: relative;
+        top: 16px;
+        left: 9px;
     }
 
     /* Show the menu icon */
@@ -113,7 +141,14 @@ body {
 
     /* Show the menu when checkbox is checked */
     #menu-toggle:checked~.navbar-links {
-        display: flex;
+        max-height: 500px;
+        /* Adjust as needed to fit your menu */
+        overflow: visible;
+        /* Ensure the links are visible */
+        padding: 18px;
+        position: relative;
+        bottom: 44px;
+        left: 19px;
     }
 
     /* Toggle between hamburger and cross icon */
@@ -127,6 +162,7 @@ body {
 }
 
 /* Ending of nav bars */
+
 
 
 /* school image responsive */
