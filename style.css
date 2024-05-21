@@ -11,7 +11,6 @@ body {
     background-color: rgba(23, 32, 42, 0.8);
     /* Semi-transparent background */
     box-shadow: 3px -6px 18px -4px #6a6464;
-    border-radius: 10px;
     padding: 0 16px;
     /* Adjusted padding, remove vertical padding */
     box-sizing: border-box;
@@ -20,6 +19,10 @@ body {
     /* Fixed height */
     z-index: 1000;
     /* Ensure navbar is on top */
+    border-top-left-radius: 10px;
+    /*this is only for top navbar radius */
+    border-top-right-radius: 10px;
+    /*this is only for top navbar radius */
 }
 
 .navbar-container {
@@ -53,14 +56,13 @@ body {
     gap: 20px;
     z-index: 1001;
     /* Ensure navbar links are on top */
-    background-color: rgba(23, 32, 42, 1);
-    /* Match the background of navbar */
-    border-radius: 9px;
     transition: max-height 0.3s ease;
     /* Smooth transition */
     overflow: hidden;
     max-height: 4em;
     /* Match navbar height initially */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .navbar-links li {
@@ -145,10 +147,11 @@ body {
         /* Adjust as needed to fit your menu */
         overflow: visible;
         /* Ensure the links are visible */
-        padding: 18px;
+        padding: 16px;
         position: relative;
         bottom: 44px;
-        left: 19px;
+        left: 16px;
+        background-color: #17202A;
     }
 
     /* Toggle between hamburger and cross icon */
@@ -159,6 +162,16 @@ body {
     #menu-toggle:checked~.menu-icon .cross-icon {
         display: inline;
     }
+}
+
+/* Adjust navbar border-radius when menu is opened */
+#menu-toggle:checked~.navbar {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Remove bottom border-radius from navbar-links when menu is opened */
+#menu-toggle:checked~.navbar-links {
+    border-radius: 0 0 10px 10px;
 }
 
 /* Ending of nav bars */
