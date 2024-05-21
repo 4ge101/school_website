@@ -53,7 +53,7 @@ body {
 
 .navbar-links {
     list-style-type: none;
-    margin: 0;
+    margin: -2px; /*manage shize of menu links to join nav-bar*/
     padding: 0;
     display: flex;
     gap: 20px;
@@ -115,7 +115,7 @@ body {
     .navbar-links {
         flex-direction: column;
         width: 100%;
-        max-height: 0;
+        max-height: 10px;
         /* Start with hidden menu */
     }
 
@@ -150,9 +150,11 @@ body {
         /* Ensure the links are visible */
         padding: 16px;
         position: relative;
-        bottom: 52px;
-        left: 16px;
+        bottom: 42px;
+        left: 14px;
         background-color: var(--color);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     /* Toggle between hamburger and cross icon */
@@ -226,7 +228,7 @@ body {
 
 /* this is the starting footer of the website */
 .footer {
-    background-color: #17202A;
+    background-color: var(--color);
     padding: 70px 0;
     margin-top: 51em;
     border-top-left-radius: 188px;
