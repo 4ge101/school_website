@@ -5,10 +5,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* variables */
+:root{
+    --color:#172d54;
+    --seccolor:#1f4789;
+}
+
 /* Start to make nav bar */
 .navbar {
     width: 100%;
-    background-color: rgba(23, 32, 42, 0.8);
+    background-color: var(--color);
     /* Semi-transparent background */
     box-shadow: 3px -6px 18px -4px #6a6464;
     padding: 0 16px;
@@ -19,10 +25,7 @@ body {
     /* Fixed height */
     z-index: 1000;
     /* Ensure navbar is on top */
-    border-top-left-radius: 10px;
-    /*this is only for top navbar radius */
-    border-top-right-radius: 10px;
-    /*this is only for top navbar radius */
+    border-radius: 10px;
 }
 
 .navbar-container {
@@ -61,8 +64,6 @@ body {
     overflow: hidden;
     max-height: 4em;
     /* Match navbar height initially */
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .navbar-links li {
@@ -80,7 +81,7 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #626567;
+    background-color: var(--seccolor);
     cursor: pointer;
     border-radius: 20px;
 }
@@ -149,9 +150,9 @@ body {
         /* Ensure the links are visible */
         padding: 16px;
         position: relative;
-        bottom: 44px;
+        bottom: 52px;
         left: 16px;
-        background-color: #17202A;
+        background-color: var(--color);
     }
 
     /* Toggle between hamburger and cross icon */
@@ -164,15 +165,6 @@ body {
     }
 }
 
-/* Adjust navbar border-radius when menu is opened */
-#menu-toggle:checked~.navbar {
-    border-radius: 10px 10px 0 0;
-}
-
-/* Remove bottom border-radius from navbar-links when menu is opened */
-#menu-toggle:checked~.navbar-links {
-    border-radius: 0 0 10px 10px;
-}
 
 /* Ending of nav bars */
 
