@@ -47,14 +47,14 @@ body {
     .navbar-logo {
         position: relative;
         top: -3em;
-        left: -14em;
+        left: -16em;
         width: 55px;
     }
 }
 
 /* responsive nav bar border-radius */
 @media only screen and (max-width: 600px) {
-    .navbar{
+    .navbar {
         border-radius: 0px;
     }
 }
@@ -178,9 +178,50 @@ body {
     }
 }
 
+/* Tablet view */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* Ending of nav bars */
+    .navbar-logo {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 55px;
+    }
 
+    .navbar-links {
+        flex-direction: row;
+        max-height: 4em;
+        width: auto;
+        overflow: visible;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 0;
+    }
+
+    .navbar-links li {
+        position: static;
+        bottom: 0;
+    }
+
+    .navbar-links a {
+        padding: 8px;
+        width: auto;
+        top: 0;
+        left: 0;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* ending of navbar */
 
 
 /* school image responsive */
@@ -350,77 +391,88 @@ ul {
     position: relative;
     top: 50rem;
 }
+/* ending vision of school */
 
-
-/* starting image animation slider */
 .slide-container {
+    width: 85%;
+    max-width: 800px;
     overflow: hidden;
-    position: relative;
-    top: 8em;
+    margin: 8em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48vh;
+    background: #f0f0f0;
+    border-radius: 10px;
 }
 
 .slider {
     display: flex;
-    animation: slide 18s linear infinite;
+    width: 700%;
+    animation: slide 35s infinite;
 }
 
 .slide {
-    flex: 0 0 auto;
-    margin-right: 20px;
+    flex: 1 0 14.2857%;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
-    width: auto;
-    background-color: #FFFFFF;
-    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
 .card img {
-    object-fit: cover;
+    width: 50%;
+    height: 20vh;
     position: relative;
-    top: 2px;
+  top: 15px;
+  left: 73px;
 }
 
 .card-content {
-    padding: 16px;
+    padding: 15px;
+    text-align: center;
 }
 
-.card-content h3 {
-    font-size: 16px;
-    margin-bottom: 3px;
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
 @keyframes slide {
-    0% {
-        transform: translateX(0);
+    0%, 14.2857% { transform: translateX(0); }
+    16.2857%, 30.5714% { transform: translateX(-14.2857%); }
+    32.5714%, 46.8571% { transform: translateX(-28.5714%); }
+    48.8571%, 63.1428% { transform: translateX(-42.8571%); }
+    65.1428%, 79.4285% { transform: translateX(-57.1428%); }
+    81.4285%, 95.7142% { transform: translateX(-71.4285%); }
+    97.7142%, 100% { transform: translateX(-85.7142%); }
+} 
+
+@media (max-width: 600px) {
+    .slider {
+        width: 700%;
     }
 
-    100% {
-        transform: translateX(-100%);
+    .card {
+        width: 100%;
     }
+
+    .slide {
+        flex: 1 0 100%;
+    }
+
+    @keyframes slide {
+        0%, 100% { transform: translateX(0); }
+        14.2857%, 28.5714% { transform: translateX(-100%); }
+        42.8571%, 57.1428% { transform: translateX(-200%); }
+        71.4285%, 85.7142% { transform: translateX(-300%); }
+    } 
 }
-
-/* Media query for mobile devices */
-@media only screen and (max-width: 600px) {
-    .slide-container {
-        top: 7em;
-    }
-
-    .card img {
-        height: 285px;
-    }
-}
-
-
-@media only screen and (min-width: 601px) {
-    .card img {
-        max-width: 52vh;
-        position: relative;
-        height: 50vh;
-        left: -3px;
-    }
-}
-
-/* ending animtion image slider */
