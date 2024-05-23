@@ -393,22 +393,29 @@ ul {
 }
 /* ending vision of school */
 
+/* starting auto image slider  */
 .slide-container {
-    width: 85%;
-    max-width: 800px;
+    width: 100%; /* Adjusted to take full screen width */
     overflow: hidden;
-    margin: 8em auto;
+    margin: 0; /* Removed margin */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 48vh;
-    background: #f0f0f0;
-    border-radius: 10px;
+    min-height: 100vh; /* Adjusted to take full screen height */
+    /* background: #f0f0f0;
+    border-radius: 10px; */
+    padding: 10px;
+}
+
+@media (min-width: 801px) {
+    .slide-container {
+        max-width: none; /* Removed max-width */
+    }
 }
 
 .slider {
     display: flex;
-    width: 700%;
+    width: 700%; /* Adjusted width for the slider */
     animation: slide 35s infinite;
 }
 
@@ -419,21 +426,34 @@ ul {
 }
 
 .card {
-    width: 90%;
-    max-width: 300px;
+    width: 29em;
+    max-width: 375px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
+    margin: 27px;
+    height: 23em;
 }
 
 .card img {
-    width: 50%;
-    height: 20vh;
+    width: 80%;
+    height: 60vh;
     position: relative;
-  top: 15px;
-  left: 73px;
+    top: 15px;
+    left: 35px;
+}
+
+@media (max-width: 600px) {
+    .card img {
+        width: 18em;
+        bottom: 3em;
+        left: 25px;
+        position: relative;
+        top: 34px;
+        height: 16em;
+    }
 }
 
 .card-content {
@@ -443,7 +463,7 @@ ul {
 
 .card h3 {
     font-size: 1.2em;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 @keyframes slide {
@@ -454,7 +474,7 @@ ul {
     65.1428%, 79.4285% { transform: translateX(-57.1428%); }
     81.4285%, 95.7142% { transform: translateX(-71.4285%); }
     97.7142%, 100% { transform: translateX(-85.7142%); }
-} 
+}
 
 @media (max-width: 600px) {
     .slider {
@@ -474,5 +494,6 @@ ul {
         14.2857%, 28.5714% { transform: translateX(-100%); }
         42.8571%, 57.1428% { transform: translateX(-200%); }
         71.4285%, 85.7142% { transform: translateX(-300%); }
-    } 
+    }
 }
+/* starting ending auto image slider  */
