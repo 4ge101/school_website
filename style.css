@@ -5,6 +5,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+::selection{
+    color: white;
+    background-color: var(--seccolor);
+}
+
 /* variables */
 :root {
     --color: #172d54;
@@ -220,7 +225,6 @@ body {
         display: none;
     }
 }
-
 /* ending of navbar */
 
 
@@ -239,26 +243,25 @@ body {
     }
 }
 
-
-/* header */
-.head {
-    margin: 22px;
-    margin-top: 100px;
-}
-
-/* this is text about school */
+/* starting text about school */
 .header {
-    margin: 22px;
+    margin: 30px;
     position: relative;
     top: 95px;
 }
 
 .text {
     position: relative;
-    top: 78px;
-    margin: 22px;
+    top: 105px;
+    margin: 30px;
     width: 90%;
 }
+
+.color-word {
+    color: var(--seccolor);
+}
+
+/* ending text about school  */
 
 /* this is for text */
 @media only screen and (min-width: 601px) {
@@ -393,10 +396,49 @@ ul {
     margin: 22px;
 }
 
+.main-text .icon-2 ol li i {
+    color: var(--seccolor);
+}
+
+.main-text .icon-3 ol li i {
+    color: var(--seccolor);
+}
+
+.main-text .icon-4 ol li i {
+    color: var(--seccolor);
+}
+
+.main-text .icon-5 ol li i {
+    color: var(--seccolor);
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    /* Adjust the distance from the text */
+    height: 2px;
+    /* Adjust the thickness of the underline */
+    background-color: currentColor;
+}
+
+.highlight {
+    color: var(--seccolor);
+}
+
+.fa-ul > li{
+    color: #4e504f;
+}
 /* ending vision of school */
 
-
-
+/* started auto image slider  */
 .slide-container {
     display: flex;
     justify-content: center;
@@ -404,8 +446,10 @@ ul {
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 20px 0; /* Adds some padding to the top and bottom */
+    margin: 0 auto;
+    /* Centers the container horizontally */
+    padding: 20px 0;
+    /* Adds some padding to the top and bottom */
     position: relative;
     top: 50em;
 }
@@ -417,7 +461,8 @@ ul {
 }
 
 .slide {
-    flex: 1 0 33.3333%; /* Three images per view */
+    flex: 1 0 33.3333%;
+    /* Three images per view */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -431,10 +476,17 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    width: 100%; /* Makes sure the card takes full width */
-    max-width: 400px; /* Optional: limits the max-width of the card */
-    margin: 10px; /* Adds space between cards */
+    width: 100%;
+    /* Makes sure the card takes full width */
+    max-width: 400px;
+    /* Optional: limits the max-width of the card */
+    margin: 10px;
+    /* Adds space between cards */
 }
+
+.card:hover{
+    transform: translateY(-20px);
+} 
 
 .card img {
     width: 100%;
@@ -454,15 +506,42 @@ ul {
 }
 
 /* Add automatic navigation */
- @keyframes slide-animation {
-    0%, 8.33% { transform: translateX(0); }
-    16.66%, 25% { transform: translateX(-33.3333%); }
-    33.33%, 41.66% { transform: translateX(-66.6666%); }
-    50%, 58.33% { transform: translateX(-100%); }
-    66.66%, 75% { transform: translateX(-133.3333%); }
-    83.33%, 91.66% { transform: translateX(-166.6666%); }
-    100% { transform: translateX(-200%); }
-} 
+@keyframes slide-animation {
+
+    0%,
+    8.33% {
+        transform: translateX(0);
+    }
+
+    16.66%,
+    25% {
+        transform: translateX(-33.3333%);
+    }
+
+    33.33%,
+    41.66% {
+        transform: translateX(-66.6666%);
+    }
+
+    50%,
+    58.33% {
+        transform: translateX(-100%);
+    }
+
+    66.66%,
+    75% {
+        transform: translateX(-133.3333%);
+    }
+
+    83.33%,
+    91.66% {
+        transform: translateX(-166.6666%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
 
 .slider {
     animation: slide-animation 18s infinite;
@@ -476,16 +555,37 @@ ul {
     }
 
     .slide {
-        flex: 1 0 100%; /* One image per view */
+        flex: 1 0 100%;
+        /* One image per view */
     }
 
- @keyframes slide-animation {
-        0%, 11.11% { transform: translateX(0); }
-        22.22%, 33.33% { transform: translateX(-100%); }
-        44.44%, 55.55% { transform: translateX(-200%); }
-        66.66%, 77.77% { transform: translateX(-300%); }
-        88.88%, 100% { transform: translateX(-400%); }
-    } 
+    @keyframes slide-animation {
+
+        0%,
+        11.11% {
+            transform: translateX(0);
+        }
+
+        22.22%,
+        33.33% {
+            transform: translateX(-100%);
+        }
+
+        44.44%,
+        55.55% {
+            transform: translateX(-200%);
+        }
+
+        66.66%,
+        77.77% {
+            transform: translateX(-300%);
+        }
+
+        88.88%,
+        100% {
+            transform: translateX(-400%);
+        }
+    }
 
     .slider {
         animation: slide-animation 30s infinite;
@@ -498,10 +598,14 @@ ul {
 
 @media (max-width: 480px) {
     .card-content h3 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .card {
-        max-width: 300px; /* Optional: adjust max-width for smaller screens */
+        max-width: 300px;
+        /* Optional: adjust max-width for smaller screens */
+        height: 32em;
     }
 }
+
+/* ending of auto image slider  */
