@@ -5,7 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-::selection{
+::selection {
     color: white;
     background-color: var(--seccolor);
 }
@@ -225,6 +225,7 @@ body {
         display: none;
     }
 }
+
 /* ending of navbar */
 
 
@@ -263,7 +264,7 @@ body {
 
 /* ending text about school  */
 
-/* this is for text */
+/* this is responsive for text*/
 @media only screen and (min-width: 601px) {
     .header {
         margin-top: -33px;
@@ -280,6 +281,41 @@ body {
 
     }
 }
+
+/* ending responsive tex */
+
+/* starting events of school */
+.event-image img {
+    width: 16.7em;
+    height: 25em;
+}
+
+.event-image {
+    position: relative;
+    top: 50em;
+    margin: 60px;
+}
+
+.event {
+    position: relative;
+    top: 52em;
+    margin: 60px;
+}
+
+@media (max-width: 768px) {
+    .event-image {
+        position: relative;
+        top: 50em;
+        margin: 40px;
+    }
+
+    .event h2{
+        position: relative;
+        left: -20px;
+    }
+}
+
+/* ending events of school */
 
 /* this is the starting footer of the website */
 .footer {
@@ -433,12 +469,26 @@ ul {
     color: var(--seccolor);
 }
 
-.fa-ul > li{
+.fa-ul>li {
     color: #4e504f;
 }
+
 /* ending vision of school */
 
 /* started auto image slider  */
+.academics {
+    position: relative;
+    top: 51.5em;
+    left: 5.5em;
+}
+
+@media (max-width: 768px) {
+    .academics {
+        position: relative;
+        left: 2em;
+    }
+}
+
 .slide-container {
     display: flex;
     justify-content: center;
@@ -484,9 +534,9 @@ ul {
     /* Adds space between cards */
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-20px);
-} 
+}
 
 .card img {
     width: 100%;
@@ -496,7 +546,7 @@ ul {
 }
 
 .card-content {
-    padding: 15px;
+    padding: 17px;
 }
 
 .card-content h3 {
