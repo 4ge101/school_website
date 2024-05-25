@@ -3,6 +3,7 @@
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--primarycolor);
 }
 
 ::selection {
@@ -14,6 +15,7 @@ body {
 :root {
     --color: #172d54;
     --seccolor: #1f4789;
+    --primarycolor: #5072a7;
 }
 
 /* Start to make nav bar */
@@ -309,7 +311,7 @@ body {
         margin: 40px;
     }
 
-    .event h2{
+    .event h2 {
         position: relative;
         left: -20px;
     }
@@ -532,6 +534,7 @@ ul {
     /* Optional: limits the max-width of the card */
     margin: 10px;
     /* Adds space between cards */
+    background-color: var(--seccolor);
 }
 
 .card:hover {
@@ -543,6 +546,7 @@ ul {
     height: 25em;
     position: relative;
     top: 0;
+    left: 0;
 }
 
 .card-content {
