@@ -3,7 +3,6 @@
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--primarycolor);
 }
 
 ::selection {
@@ -15,7 +14,6 @@ body {
 :root {
     --color: #172d54;
     --seccolor: #1f4789;
-    --primarycolor: #5072a7;
 }
 
 /* Start to make nav bar */
@@ -556,7 +554,7 @@ ul {
 .card-content h3 {
     margin: 13px;
     font-size: 18px;
-    color: #333;
+    color: #fff;
 }
 
 /* Add automatic navigation */
