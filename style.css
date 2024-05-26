@@ -307,12 +307,16 @@ body {
         position: relative;
         top: 50em;
         margin: 40px;
+        display: flex;
     }
 
     .event h2 {
         position: relative;
         left: -20px;
+        top: 16px;
     }
+
+
 }
 
 /* ending events of school */
