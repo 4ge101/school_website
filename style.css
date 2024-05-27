@@ -285,6 +285,23 @@ body {
 /* ending responsive tex */
 
 /* starting events of school */
+#slide1 {
+    display: none;
+}
+
+#slide2 {
+    display: none;
+}
+
+#slide3 {
+    display: none;
+}
+
+#slide4 {
+    display: none;
+}
+
+/* responsive for mobile only  */
 @media (max-width: 480px) {
     .box {
         position: relative;
@@ -328,23 +345,23 @@ body {
         height: 38em;
     }
 
-    input[name="slider"] {
+    input[name="sliders"] {
         display: none;
     }
 
-    input[name="slider"]:nth-of-type(1):checked~.slides-box {
+    input[name="sliders"]:nth-of-type(1):checked~.slides-box {
         transform: translateX(17%);
     }
 
-    input[name="slider"]:nth-of-type(2):checked~.slides-box {
+    input[name="sliders"]:nth-of-type(2):checked~.slides-box {
         transform: translateX(-16.5%);
     }
 
-    input[name="slider"]:nth-of-type(3):checked~.slides-box {
+    input[name="sliders"]:nth-of-type(3):checked~.slides-box {
         transform: translateX(-58%);
     }
 
-    input[name="slider"]:nth-of-type(4):checked~.slides-box {
+    input[name="sliders"]:nth-of-type(4):checked~.slides-box {
         transform: translateX(-105%);
     }
 
@@ -610,7 +627,7 @@ ul {
 }
 
 .card-content {
-    padding: 17px;
+    padding: 16px;
 }
 
 .card-content h3 {
@@ -618,6 +635,13 @@ ul {
     font-size: 18px;
     color: #fff;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .card-content h3{
+        width: 13em;
+    }
+}
+
 
 /* Add automatic navigation */
 @keyframes slide-animation {
