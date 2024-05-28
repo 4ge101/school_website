@@ -284,8 +284,7 @@ body {
 
 /* ending responsive text */
 
-/* starting events of school */
-
+/* starting events of school *
 /* starting for laptop responsive  */
 #slide1 {
     display: none;
@@ -334,10 +333,21 @@ body {
         z-index: 2;
         display: flex;
         position: relative;
-        top: 2em;
+        top: -2em;
         right: 1em;
         font-size: 12px;
         font-weight: 900;
+    }
+
+    .slide-box h6 {
+        border: 2px solid black;
+        display: inline-block;
+        padding: 4px;
+        background-color: var(--color);
+        position: relative;
+        bottom: 24px;
+        left: 30px;
+        border-radius: 6px;
     }
 }
 
@@ -349,11 +359,23 @@ body {
         display: flex;
     }
 
-   .slide-box h5 {
-     position: relative;
-     top: 62em;
-     font-size: 12px;
-     font-weight: 900;
+    .slide-box h5 {
+        position: relative;
+        top: 60em;
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .slide-box h6 {
+        border: 2px solid black;
+        display: inline-block;
+        padding: 4px;
+        background-color: var(--color);
+        position: relative;
+        bottom: 24px;
+        left: 30px;
+        border-radius: 6px;
+        top: 66em;
     }
 
     .slide-box img {
@@ -377,6 +399,10 @@ body {
     }
 
     .slide-box h5 {
+        display: none;
+    }
+
+    .slide-box h6 {
         display: none;
     }
 
