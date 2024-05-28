@@ -282,7 +282,7 @@ body {
     }
 }
 
-/* ending responsive tex */
+/* ending responsive text */
 
 /* starting events of school */
 #slide1 {
@@ -299,6 +299,29 @@ body {
 
 #slide4 {
     display: none;
+}
+
+.header-box {
+    position: relative;
+    top: 47em;
+    margin: 20px;
+}
+
+@media (min-width: 1024px) {
+    .slide-box img {
+        width: 17.1em;
+        height: 20em;
+        margin: 1px;
+        position: relative;
+        left: -3px;
+        border-radius: 6px;
+    }
+
+    .slides-box {
+        display: flex;
+        position: relative;
+        top: 45em;
+    }
 }
 
 /* responsive for mobile only  */
@@ -343,6 +366,8 @@ body {
         /* Ensure the entire image is visible */
         display: block;
         height: 38em;
+        position: relative;
+        top: -4em;
     }
 
     input[name="sliders"] {
@@ -392,7 +417,6 @@ body {
 
 
 }
-
 
 /* ending events of school */
 
@@ -636,8 +660,8 @@ ul {
     color: #fff;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 900px){
-    .card-content h3{
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .card-content h3 {
         width: 13em;
     }
 }
