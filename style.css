@@ -305,43 +305,66 @@ body {
 
 .header-box {
     position: relative;
-    top: 47em;
+    top: 48em;
     margin: 20px;
+    left: 0.5em;
 }
 
 @media (min-width: 1024px) {
     .slide-box img {
-        width: 17.1em;
+        width: 16em;
         height: 20em;
         margin: 1px;
         position: relative;
-        left: -3px;
-        border-radius: 6px;
+        left: -18px;
+        border-radius: 10px;
+        padding: 5px;
     }
 
     .slides-box {
         display: flex;
         position: relative;
         top: 45em;
+        margin: 35px;
+    }
+
+    .slide-box h5 {
+        overflow: hidden;
+        width: 24vw;
+        z-index: 2;
+        display: flex;
+        position: relative;
+        top: 2em;
+        right: 1em;
+        font-size: 12px;
+        font-weight: 900;
     }
 }
 
 /* ending laptop responsive  */
 
 /* starting tablet responsive */
-@media (min-width: 360px) and (max-width: 915px) {
+@media (min-width: 400px) and (max-width: 915px) {
     .slides-box {
         display: flex;
+    }
+
+   .slide-box h5 {
+     position: relative;
+     top: 62em;
+     font-size: 12px;
+     font-weight: 900;
     }
 
     .slide-box img {
         width: 14em;
         height: 20em;
-        padding: 0.6px;
+        /* padding: 0.6px; */
         position: relative;
         top: 47em;
     }
 }
+
 /* ending tablet responsive */
 
 /* starting responsive for mobile only  */
@@ -351,6 +374,10 @@ body {
         position: relative;
         top: 50em;
         margin: 20px;
+    }
+
+    .slide-box h5 {
+        display: none;
     }
 
     .box {
@@ -402,7 +429,7 @@ body {
     }
 
     input[name="sliders"]:nth-of-type(1):checked~.slides-box {
-        transform: translateX(17%);
+        transform: translateX(18%);
     }
 
     input[name="sliders"]:nth-of-type(2):checked~.slides-box {
@@ -444,6 +471,7 @@ body {
 
 
 }
+
 /* ending responsive for mobile  */
 /* ending events of school */
 
