@@ -353,10 +353,239 @@ body {
 
 /* ending laptop responsive  */
 
+/* starting news of school *
+/* starting for laptop responsive  */
+#news1 {
+    display: none;
+}
+
+#news2 {
+    display: none;
+}
+
+#news3 {
+    display: none;
+}
+
+#news4 {
+    display: none;
+}
+
+.news-header h2 {
+    position: relative;
+    top: 29em;
+    left: 1em;
+}
+
+@media (min-width: 1024px) {
+    .news-box img {
+        width: 16em;
+        height: 20em;
+        margin: 1px;
+        position: relative;
+        left: -18px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .news-container {
+        display: flex;
+        position: relative;
+        top: 40em;
+        margin: 35px;
+    }
+
+    .news-box h5 {
+        overflow: hidden;
+        width: 24vw;
+        z-index: 2;
+        display: flex;
+        position: relative;
+        top: -2em;
+        right: 1em;
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .news-box h6 {
+        border: 2px solid black;
+        display: inline-block;
+        padding: 4px;
+        background-color: var(--color);
+        position: relative;
+        bottom: 24px;
+        left: 30px;
+        border-radius: 6px;
+    }
+}
+
+/* ending laptop responsive  */
+
+/* starting tablet responsive */
+@media (min-width: 400px) and (max-width: 915px) {
+    .news-container {
+        display: flex;
+    }
+
+    .news-header h2 {
+        position: relative;
+        top: 31.5em;
+        left: 1em;
+    }
+
+    .news-box h5 {
+        position: relative;
+        top: 60em;
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .news-box h6 {
+        border: 2px solid black;
+        display: inline-block;
+        padding: 4px;
+        background-color: var(--color);
+        position: relative;
+        bottom: 24px;
+        left: 30px;
+        border-radius: 6px;
+        top: 66em;
+    }
+
+    .news-box img {
+        width: 14em;
+        height: 20em;
+        /* padding: 0.6px; */
+        position: relative;
+        top: 47em;
+    }
+}
+
+/* ending tablet responsive */
+
+/* starting responsive for mobile only  */
+@media (max-width: 480px) {
+
+    .news-header h2 {
+        position: relative;
+        top: 30em;
+        margin: 20px;
+    }
+
+    .news-box h5 {
+        display: none;
+    }
+
+    .news-box h6 {
+        display: none;
+    }
+
+    .radio-box {
+        position: relative;
+        width: 100%;
+        /* Make the box container full width */
+        max-width: 800px;
+        /* Increase max-width for wider display */
+        margin: auto;
+        overflow: hidden;
+        aspect-ratio: 4 / 3;
+        border-radius: 10px;
+        position: relative;
+        top: 45em;
+        width: 21em;
+    }
+
+    .news-container {
+        display: flex;
+        width: 400%;
+        /* This remains to accommodate all slides */
+        height: 100%;
+        transition: transform 0.5s ease;
+        position: relative;
+    }
+
+    .news-box {
+        flex: 0 0 25%;
+        height: 130%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -15em;
+        bottom: 0.6em;
+    }
+
+    .news-box img {
+        object-fit: contain;
+        /* Ensure the entire image is visible */
+        display: block;
+        height: 38em;
+        position: relative;
+        top: 0.9em;
+        top: 2em;
+    }
+
+    input[name="news"] {
+        display: none;
+    }
+
+    input[name="news"]:nth-of-type(1):checked~.news-container {
+        transform: translateX(18%);
+    }
+
+    input[name="news"]:nth-of-type(2):checked~.news-container {
+        transform: translateX(-16.5%);
+    }
+
+    input[name="news"]:nth-of-type(3):checked~.news-container {
+        transform: translateX(-58%);
+    }
+
+    input[name="news"]:nth-of-type(4):checked~.news-container {
+        transform: translateX(-105%);
+    }
+
+    .news-navigation {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
+
+    .news-navigation label {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ccc;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    input[name="news"]:nth-of-type(1):checked~.news-navigation label:nth-of-type(1),
+    input[name="news"]:nth-of-type(2):checked~.news-navigation label:nth-of-type(2),
+    input[name="news"]:nth-of-type(3):checked~.news-navigation label:nth-of-type(3),
+    input[name="news"]:nth-of-type(4):checked~.news-navigation label:nth-of-type(4) {
+        background: #333;
+    }
+
+
+}
+
+/* ending responsive for mobile  */
+/* ending events of school */
+
 /* starting tablet responsive */
 @media (min-width: 400px) and (max-width: 915px) {
     .slides-box {
         display: flex;
+    }
+
+    .header-box h2 {
+        position: relative;
+        top: -0.5em;
     }
 
     .slide-box h5 {
