@@ -1089,3 +1089,32 @@ ul {
 }
 
 /* ending of auto image slider  */
+
+/* starting gallery image of school */
+/* .gallery-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+} */
+
+.gallery-image img {
+    height: 15em;
+    width: 15em;
+    padding: 4px;
+    position: relative;
+    left: 2em;
+}
+
+@media (max-width: 480px) {
+    .gallery-image img {
+        height: 18em;
+        width: 20em;
+        padding: 7px;
+        position: relative;
+        top: 1em;
+        left: 0;
+    }
+}
+
+/* ending gallery image of school */
