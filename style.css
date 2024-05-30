@@ -284,6 +284,28 @@ body {
 
 /* ending responsive text */
 
+/* started video of promotiom of school */
+.video {
+    position: relative;
+    top: 38em;
+    display: flex;
+    gap: 45px;
+    left: 5em;
+}
+
+.video-head {
+    position: relative;
+    top: 38em;
+    left: 5em;
+}
+
+@media (min-width: 400px){
+    .video iframe{
+        width: 22em;
+    }
+}
+/* ending video of promotion of school */
+
 /* starting events of school *
 /* starting for laptop responsive  */
 #slide1 {
@@ -1091,13 +1113,6 @@ ul {
 /* ending of auto image slider  */
 
 /* starting gallery image of school */
-/* .gallery-image {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-} */
-
 .gallery-image img {
     height: 15em;
     width: 15em;
