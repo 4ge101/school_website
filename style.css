@@ -265,7 +265,7 @@ body {
 /* ending text about school  */
 
 /* this is responsive for text*/
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) {
     .header {
         margin-top: -33px;
     }
@@ -287,24 +287,57 @@ body {
 /* started video of promotiom of school */
 .video {
     position: relative;
-    top: 38em;
-    display: flex;
+    top: 70em;
     gap: 45px;
-    left: 5em;
+    left: 3.56em;
+    flex-direction: column; /* Added to display in column by default */
 }
+
+.video iframe {
+    padding: 22px;
+}
+
 
 .video-head {
     position: relative;
-    top: 38em;
+    top: 70em;
     left: 5em;
 }
 
-@media (min-width: 400px){
-    .video iframe{
-        width: 22em;
+@media (max-width: 360px) {
+    .video iframe {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .video {
+        position: relative;
+        left: -5px;
+        top: 42em;
+        flex-direction: row; /* Changed to display in row on smaller screens */
+    }
+
+    .video-head {
+        position: relative;
+        top: 42em;
+        left: 2.5em;
     }
 }
+
 /* ending video of promotion of school */
+
+/* starting facebook page of school */
+.facebook-page{
+    position: relative;
+    bottom: 2em;
+}
+
+.facebook-head{
+    position: relative;
+    bottom: 2em;
+    left: 2em;
+}
+/* ending facebool page of school */
 
 /* starting events of school *
 /* starting for laptop responsive  */
@@ -641,7 +674,7 @@ body {
 /* ending tablet responsive */
 
 /* starting responsive for mobile only  */
-@media (max-width: 480px) {
+@media (max-width: 360px) {
 
     .header-box {
         position: relative;
@@ -992,7 +1025,7 @@ ul {
     color: #fff;
 }
 
-@media (min-width: 350px) and (max-width: 915px) {
+@media (min-width: 360px) and (max-width: 915px) {
     .card-content h3 {
         margin: 13px;
         font-size: 12px;
@@ -1121,7 +1154,7 @@ ul {
     left: 2em;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .gallery-image img {
         height: 18em;
         width: 20em;
