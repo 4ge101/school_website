@@ -61,8 +61,6 @@ body {
 @media only screen and (max-width: 600px) {
     .navbar {
         border-radius: 0px;
-        position: sticky;
-        top: 0;
     }
 }
 
@@ -1186,3 +1184,44 @@ ul {
 }
 
 /* ending gallery image of school */
+
+.counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.counter {
+    font-size: 50px;
+    color: green;
+    text-align: center;
+}
+@keyframes count {
+    0% { content: "0"; }
+    5% { content: "100"; }
+    10% { content: "200"; }
+    15% { content: "300"; }
+    20% { content: "400"; }
+    25% { content: "500"; }
+    30% { content: "600"; }
+    35% { content: "700"; }
+    40% { content: "800"; }
+    45% { content: "900"; }
+    50% { content: "1000"; }
+    55% { content: "1100"; }
+    60% { content: "1200"; }
+    65% { content: "1300"; }
+    70% { content: "1400"; }
+    75% { content: "1500"; }
+    80% { content: "1600"; }
+    85% { content: "1700"; }
+    90% { content: "1800"; }
+    95% { content: "1900"; }
+    100% { content: "2000"; }
+}
+.counter:before {
+    display: inline-block;
+    animation: count 5s linear forwards;
+    content: "0";
+}
