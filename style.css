@@ -330,6 +330,7 @@ body {
 .facebook-page{
     position: relative;
     bottom: 2em;
+    left: 2em;
 }
 
 .facebook-head{
