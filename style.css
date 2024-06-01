@@ -61,6 +61,8 @@ body {
 @media only screen and (max-width: 600px) {
     .navbar {
         border-radius: 0px;
+        position: sticky;
+        top: 0;
     }
 }
 
@@ -290,7 +292,8 @@ body {
     top: 70em;
     gap: 45px;
     left: 3.56em;
-    flex-direction: column; /* Added to display in column by default */
+    flex-direction: column;
+    /* Added to display in column by default */
 }
 
 .video iframe {
@@ -313,13 +316,14 @@ body {
     .video {
         position: relative;
         left: -5px;
-        top: 42em;
-        flex-direction: row; /* Changed to display in row on smaller screens */
+        top: 78em;
+        flex-direction: row;
+        /* Changed to display in row on smaller screens */
     }
 
     .video-head {
         position: relative;
-        top: 42em;
+        top: 78em;
         left: 2.5em;
     }
 }
@@ -327,17 +331,32 @@ body {
 /* ending video of promotion of school */
 
 /* starting facebook page of school */
-.facebook-page{
+.facebook-page {
     position: relative;
     bottom: 2em;
     left: 2em;
 }
 
-.facebook-head{
+.facebook-head {
     position: relative;
     bottom: 2em;
     left: 2em;
 }
+
+@media (max-width: 360px) {
+    .facebook-page {
+        position: relative;
+        bottom: 10em;
+        left: 0;
+    }
+
+    .facebook-head {
+        position: relative;
+        bottom: 11em;
+        left: 2em;
+    }
+}
+
 /* ending facebool page of school */
 
 /* starting events of school *
