@@ -1187,16 +1187,22 @@ ul {
 
 .counter-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 64vh;
     font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    position: relative;
+    left: 38%;
+    top: 5em;
 }
 
 .counter {
     font-size: 50px;
     color: green;
     text-align: center;
+    position: relative;
+    top: 2em;
+    right: 31px;
 }
 
 @keyframes count {
@@ -1309,12 +1315,36 @@ ul {
     display: inline-block;
     animation: count 1.5s linear forwards;
     content: "0";
+    position: relative;
+    top: 2em;
+    left: 2.5em;
 }
 
 .counter-head {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 9em;
-    left: 10px;
+    bottom: 0;
+    left: 12px;
+}
+@media (max-width: 360px){
+    .counter-container{
+        display: flex;
+        height: 44vh;
+        font-family: Arial,
+        sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 5em;
+    }
+
+    .counter-head {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 0;
+        left: 12px;
+    }
 }
