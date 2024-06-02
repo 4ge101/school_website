@@ -1192,36 +1192,129 @@ ul {
     height: 100vh;
     font-family: Arial, sans-serif;
 }
+
 .counter {
     font-size: 50px;
     color: green;
     text-align: center;
 }
+
 @keyframes count {
-    0% { content: "0"; }
-    5% { content: "100"; }
-    10% { content: "200"; }
-    15% { content: "300"; }
-    20% { content: "400"; }
-    25% { content: "500"; }
-    30% { content: "600"; }
-    35% { content: "700"; }
-    40% { content: "800"; }
-    45% { content: "900"; }
-    50% { content: "1000"; }
-    55% { content: "1100"; }
-    60% { content: "1200"; }
-    65% { content: "1300"; }
-    70% { content: "1400"; }
-    75% { content: "1500"; }
-    80% { content: "1600"; }
-    85% { content: "1700"; }
-    90% { content: "1800"; }
-    95% { content: "1900"; }
-    100% { content: "2000"; }
+    0% {
+        content: "0";
+    }
+
+    4% {
+        content: "1000";
+    }
+
+    8% {
+        content: "2000";
+    }
+
+    12% {
+        content: "3000";
+    }
+
+    16% {
+        content: "4000";
+    }
+
+    20% {
+        content: "5000";
+    }
+
+    24% {
+        content: "6000";
+    }
+
+    28% {
+        content: "7000";
+    }
+
+    32% {
+        content: "8000";
+    }
+
+    36% {
+        content: "9000";
+    }
+
+    40% {
+        content: "10000";
+    }
+
+    44% {
+        content: "11000";
+    }
+
+    48% {
+        content: "12000";
+    }
+
+    52% {
+        content: "13000";
+    }
+
+    56% {
+        content: "14000";
+    }
+
+    60% {
+        content: "15000";
+    }
+
+    64% {
+        content: "16000";
+    }
+
+    68% {
+        content: "17000";
+    }
+
+    72% {
+        content: "18000";
+    }
+
+    76% {
+        content: "19000";
+    }
+
+    80% {
+        content: "20000";
+    }
+
+    84% {
+        content: "21000";
+    }
+
+    88% {
+        content: "22000";
+    }
+
+    92% {
+        content: "23000";
+    }
+
+    96% {
+        content: "24000";
+    }
+
+    100% {
+        content: "26000";
+    }
 }
+
 .counter:before {
     display: inline-block;
-    animation: count 5s linear forwards;
+    animation: count 1.5s linear forwards;
     content: "0";
+}
+
+.counter-head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 9em;
+    left: 10px;
 }
