@@ -1185,6 +1185,7 @@ ul {
 
 /* ending gallery image of school */
 
+/* starting about section of text and image */
 .school-image2 img {
     height: auto;
     width: 58%;
@@ -1217,7 +1218,7 @@ ul {
     margin: 22px;
 }
 
-@media (max-width: 360px){
+@media (max-width: 360px) {
     .school-image2 img {
         height: auto;
         width: 100%;
@@ -1225,12 +1226,12 @@ ul {
         top: 90px;
     }
 
-    .text2 p{
+    .text2 p {
         position: relative;
         margin: 30px;
         width: 90%;
         font-size: medium;
-       top: 60px;
+        top: 60px;
     }
 
     .text2 {
@@ -1246,4 +1247,157 @@ ul {
         font-size: 20px;
         left: 5px;
     }
+}
+
+/* ending about section of tex and images */
+
+@keyframes counter {
+    0% {
+        content: "0";
+    }
+
+    4% {
+        content: "1000";
+    }
+
+    8% {
+        content: "2000";
+    }
+
+    12% {
+        content: "3000";
+    }
+
+    16% {
+        content: "4000";
+    }
+
+    20% {
+        content: "5000";
+    }
+
+    24% {
+        content: "6000";
+    }
+
+    28% {
+        content: "7000";
+    }
+
+    32% {
+        content: "8000";
+    }
+
+    36% {
+        content: "9000";
+    }
+
+    40% {
+        content: "10000";
+    }
+
+    44% {
+        content: "11000";
+    }
+
+    48% {
+        content: "12000";
+    }
+
+    52% {
+        content: "13000";
+    }
+
+    56% {
+        content: "14000";
+    }
+
+    60% {
+        content: "15000";
+    }
+
+    64% {
+        content: "16000";
+    }
+
+    68% {
+        content: "17000";
+    }
+
+    72% {
+        content: "18000";
+    }
+
+    76% {
+        content: "19000";
+    }
+
+    80% {
+        content: "20000";
+    }
+
+    84% {
+        content: "21000";
+    }
+
+    88% {
+        content: "22000";
+    }
+
+    92% {
+        content: "23000";
+    }
+
+    96% {
+        content: "24000";
+    }
+
+    100% {
+        content: "26000";
+    }
+}
+
+.counter-container::before {
+    content: counter(count);
+    animation: counter 1.5s linear forwards;
+    font-size: 40px;
+    position: relative;
+    top: 40px;
+    left: 2px;
+}
+
+.counter-container {
+    counter-reset: count;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    position: relative;
+    left: 52px;
+}
+
+.counter-icon {
+    font-size: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 150px;
+    bottom: 60px;
+}
+
+.student-counter {
+    width: 30%;
+    height: 50vh;
+    box-shadow: 10px 10px 10px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 30em;
+    top: 4em;
+}
+
+.counter-head {
+    position: relative;
+    top: 6em;
+    right: 6em;
 }
