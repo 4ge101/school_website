@@ -1185,109 +1185,65 @@ ul {
 
 /* ending gallery image of school */
 
-/* Common styles */
-.counters {
-    display: flex;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-    margin-top: 5em;
+.school-image2 img {
+    height: auto;
+    width: 58%;
+    position: relative;
+    top: 70px;
 }
 
-.counter-container, .counter-container2 {
+.school-image2 {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 1em;
-    padding: 1em;
 }
 
-.counter, .counter2 {
-    font-size: 50px;
-    color: green;
-    text-align: center;
+.text2 p {
+    font-size: 25px;
+    font-weight: 504;
+    width: 57vw;
 }
 
-.counter-head, .counter-head2 {
+.text2 {
     display: flex;
     justify-content: center;
-    margin-top: 0.5em;
+    align-items: center;
 }
 
-/* Student counter specific styles */
-@keyframes count1 {
-    0% { content: "0"; }
-    4% { content: "1000"; }
-    8% { content: "2000"; }
-    12% { content: "3000"; }
-    16% { content: "4000"; }
-    20% { content: "5000"; }
-    24% { content: "6000"; }
-    28% { content: "7000"; }
-    32% { content: "8000"; }
-    36% { content: "9000"; }
-    40% { content: "10000"; }
-    44% { content: "11000"; }
-    48% { content: "12000"; }
-    52% { content: "13000"; }
-    56% { content: "14000"; }
-    60% { content: "15000"; }
-    64% { content: "16000"; }
-    68% { content: "17000"; }
-    72% { content: "18000"; }
-    76% { content: "19000"; }
-    80% { content: "20000"; }
-    84% { content: "21000"; }
-    88% { content: "22000"; }
-    92% { content: "23000"; }
-    96% { content: "24000"; }
-    100% { content: "26000"; }
-}
-
-.counter:before {
-    display: inline-block;
-    animation: count1 1.5s linear forwards;
-    content: "0";
+.header2 h2 {
     position: relative;
-    top: 2em;
-    left: 2.5em;
+    bottom: 21.5em;
+    margin: 22px;
 }
 
-/* Classes counter specific styles */
-@keyframes count2 {
-    0% { content: "0"; }
-    4% { content: "1"; }
-    8% { content: "2"; }
-    12% { content: "3"; }
-    16% { content: "4"; }
-    20% { content: "5"; }
-    24% { content: "6"; }
-    28% { content: "7"; }
-    32% { content: "8"; }
-    36% { content: "9"; }
-    40% { content: "10"; }
-    44% { content: "11"; }
-    48% { content: "12"; }
-    52% { content: "13"; }
-    56% { content: "14"; }
-    60% { content: "15"; }
-    64% { content: "16"; }
-    68% { content: "17"; }
-    72% { content: "18"; }
-    76% { content: "19"; }
-    80% { content: "20"; }
-    84% { content: "25"; }
-    88% { content: "30"; }
-    92% { content: "35"; }
-    96% { content: "36"; }
-    100% { content: "37"; }
-}
+@media (max-width: 360px){
+    .school-image2 img {
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: 90px;
+    }
 
-.counter2:before {
-    display: inline-block;
-    animation: count2 1.5s linear forwards;
-    content: "0";
-    position: relative;
-    top: 2em;
-    left: 2.5em;
+    .text2 p{
+        position: relative;
+        margin: 30px;
+        width: 90%;
+        font-size: medium;
+       top: 60px;
+    }
+
+    .text2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header2 h2 {
+        position: relative;
+        bottom: 10.5em;
+        margin: -3px;
+        font-size: 20px;
+        left: 5px;
+    }
 }
