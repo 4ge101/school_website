@@ -15,6 +15,7 @@ body {
     --color: #172d54;
     --seccolor: #1f4789;
     --primcolor: #495057;
+    --whitecolor: white;
 }
 
 /* Start to make nav bar */
@@ -88,18 +89,30 @@ body {
 
 .navbar-links a {
     text-decoration: none;
-    color: white;
+    color: var(--whitecolor);
     padding: 8px;
     /* Adjusted padding */
     display: block;
     text-align: center;
     text-transform: uppercase;
+    position: relative;
 }
 
-.navbar-links a:hover {
-    background-color: var(--seccolor);
-    cursor: pointer;
-    border-radius: 20px;
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--primcolor);
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 /* Menu icon for mobile */
@@ -1252,8 +1265,43 @@ ul {
 
 /* ending about section of tex and images */
 
-.title-wrapper{
+.title-wrapper {
     background-color: var(--primcolor);
     padding: 20px;
     margin-top: 20px;
 }
+
+/* starting nav-baar in gallery */
+.navbar2 ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar2 li {
+    padding: 20px;
+}
+
+.navbar-links2 a {
+    text-decoration: none;
+    position: relative;
+    color: var(--seccolor);
+}
+
+.navbar-links2 a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--primcolor);
+    transition: width 0.3s ease;
+}
+
+.navbar-links2 a:hover::after {
+    width: 100%;
+    left: 0;
+}
+/* ending nav-bar in gallery */
