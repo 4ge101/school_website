@@ -1305,7 +1305,7 @@ ul {
         background-color: #FFC107;
         position: absolute;
         left: 21px;
-        top: 142px;
+        top: 150px;
     }
 }
 
@@ -1357,4 +1357,85 @@ ul {
     left: 0;
 }
 
+.navbar2 li {
+    padding: 30px;
+}
+
+@media (max-width: 360px) {
+    .navbar2 ul {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar2 li {
+        padding: 10px;
+    }
+    
+}
+
+@media (min-width: 400px) and (max-width: 915px){
+    .navbar2 li{
+        padding: 30px;
+    }
+}
 /* ending nav-bar in gallery */
+
+/* starting nav-baar in facilities */
+.navbar3 ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar3 li {
+    padding: 20px;
+}
+
+.navbar-links3 a {
+    text-decoration: none;
+    position: relative;
+    color: var(--seccolor);
+}
+
+.navbar-links3 a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--primcolor);
+    transition: width 0.3s ease;
+}
+
+.navbar-links3 a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar3 li {
+    padding: 30px;
+}
+
+@media (max-width: 360px) {
+    .navbar3 ul {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar3 li{
+        padding: 10px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 915px){
+    .navbar3 li{
+        padding: 21px;
+    }
+}
+/* ending nav-bar in facilities */
