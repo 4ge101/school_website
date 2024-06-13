@@ -44,6 +44,37 @@ body {
     /* Ensure it takes the full height of navbar */
 }
 
+
+/*Stared dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: var(--whitecolor);
+}
+
+.dropdown-content a:hover::after {
+    background-color: var(--primcolor);
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ended drop down menu */
+
 .navbar-logo {
     width: 61px;
     cursor: pointer;
@@ -369,7 +400,21 @@ body {
     }
 }
 
-/* ending facebool page of school */
+@media (min-width: 360px) and (max-width: 915px) {
+    .facebook-page {
+        position: relative;
+        bottom: 22em;
+        left: 2em;
+    }
+
+    .facebook-head {
+        position: relative;
+        bottom: 23em;
+        left: 2em;
+    }
+}
+
+/* ending facebook page of school */
 
 /* starting events of school *
 /* starting for laptop responsive  */
@@ -439,6 +484,7 @@ body {
 }
 
 /* ending laptop responsive  */
+/* ending events of school *
 
 /* starting news of school *
 /* starting for laptop responsive  */
@@ -1372,14 +1418,15 @@ ul {
     .navbar2 li {
         padding: 10px;
     }
-    
+
 }
 
-@media (min-width: 400px) and (max-width: 915px){
-    .navbar2 li{
+@media (min-width: 400px) and (max-width: 915px) {
+    .navbar2 li {
         padding: 30px;
     }
 }
+
 /* ending nav-bar in gallery */
 
 /* starting nav-baar in facilities */
@@ -1428,14 +1475,66 @@ ul {
         flex-wrap: wrap;
     }
 
-    .navbar3 li{
+    .navbar3 li {
         padding: 10px;
     }
 }
 
-@media (min-width: 400px) and (max-width: 915px){
-    .navbar3 li{
+@media (min-width: 400px) and (max-width: 915px) {
+    .navbar3 li {
         padding: 21px;
     }
 }
+
 /* ending nav-bar in facilities */
+
+/* extra image of principal with hover effect */
+.principal-image {
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    position: relative;
+    top: 45em;
+    right: 5em;
+}
+
+.principal-image img {
+    width: 20%;
+    border-radius: 50%;
+    transition: border-radius 0.3s ease;
+    z-index: 1;
+}
+
+.principal-image img:hover {
+    border-radius: 4%;
+}
+
+/* adding card of staffs facilities & Academics */
+.card4 {
+    width: 24%;
+    height: 20%;
+    box-shadow: 4px 3px 5px 5px black;
+    position: relative;
+    left: 4em;
+}
+
+.card4 h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card4 article {
+    position: relative;
+    left: 42px;
+}
+
+@media (max-width: 360px) {
+    .card4 {
+        width: 93%;
+        height: 20%;
+        box-shadow: 4px 3px 5px 5px black;
+        position: relative;
+        left: 1em;
+    }
+}
