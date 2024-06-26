@@ -1607,6 +1607,15 @@ ul {
     left: -5%;
 }
 
+@media (max-width: 360px) {
+    .container-card {
+        display: block;
+        position: relative;
+        left: -1px;
+
+    }
+}
+
 /* started facilities of school */
 .facilities-container {
     display: flex;
@@ -1629,6 +1638,7 @@ ul {
 }
 
 @media (max-width: 360px) {
+
     .facilities-container,
     .facilities-container2 {
         display: flex;
