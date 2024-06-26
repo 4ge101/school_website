@@ -1300,7 +1300,7 @@ ul {
     background-color: #FFC107;
     position: absolute;
     left: 46px;
-    top: 180px;
+    top: 160px;
 }
 
 /* responsive for mobile */
@@ -1467,27 +1467,6 @@ ul {
 
 /* ending nav-bar in facilities */
 
-/* extra image of principal with hover effect */
-.principal-image {
-    display: flex;
-    justify-content: end;
-    align-content: end;
-    position: relative;
-    top: 64em;
-    right: 5em;
-}
-
-.principal-image img {
-    width: 20%;
-    border-radius: 50%;
-    transition: border-radius 0.3s ease;
-    z-index: 1;
-}
-
-.principal-image img:hover {
-    border-radius: 4%;
-}
-
 /* adding card of staffs facilities & Academics */
 .card4 {
     width: 24%;
@@ -1612,7 +1591,7 @@ ul {
         display: block;
         position: relative;
         left: -1px;
-
+        top: 10em;
     }
 }
 
@@ -1620,6 +1599,8 @@ ul {
 .facilities-container {
     display: flex;
     justify-content: space-evenly;
+    font-size: 14px;
+    padding: 40px;
 }
 
 .facilities-container .facilities i {
@@ -1630,6 +1611,7 @@ ul {
 .facilities-container2 {
     display: flex;
     justify-content: space-evenly;
+    padding: 26px;
 }
 
 .facilities-container2 .facilities i {
@@ -1637,13 +1619,88 @@ ul {
     justify-content: center;
 }
 
+.facilities-container3 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    padding: 28px;
+}
+
+.facilities-container3 .facilities i {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 360px) {
 
     .facilities-container,
-    .facilities-container2 {
+    .facilities-container2,
+    .facilities-container3 {
         display: flex;
         flex-wrap: wrap;
+        justify-content: start;
+        gap: 55px;
+        padding: 3px;
+    }
+
+    .facilities-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 34px;
+    }
+
+    .facilities-container2 {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 34px;
+        margin-top: 15px;
+    }
+
+    .facilities-container3 {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 22px;
+        margin-top: 20px;
+    }
+
+    .facilities-container i,
+    .facilities-container2 i,
+    .facilities-container3 i {
+        font-size: 50px;
+    }
+
+    .facilities-container h3,
+    .facilities-container2 h3,
+    .facilities-container3 h3 {
+        font-size: 13px;
+        padding: 4px;
     }
 }
 
+.facilities-container-box {
+    background-color: var(--color);
+    color: #f0f0f0;
+    padding: 20px
+}
+
+.facilities-container i:hover,
+.facilities-container2 i:hover,
+.facilities-container3 i:hover {
+    color: #fff700;
+}
+
+@media (min-width: 400px) and (max-width: 915px) {
+    .facilities-container i,
+    .facilities-container2 i,
+    .facilities-container3 i {
+        font-size: 50px;
+    }
+
+    .facilities-container h3,
+    .facilities-container2 h3,
+    .facilities-container3 h3 {
+        font-size: 13px;
+        padding: 42px;
+    }
+}
 /* ended facilities of school */
