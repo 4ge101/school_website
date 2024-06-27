@@ -1505,6 +1505,33 @@ ul {
     }
 }
 
+@media (min-width: 400px) and (max-width: 915px) {
+
+    .card4 {
+        width: 30%;
+        height: 22%;
+        box-shadow: 1px 1px 4px -2px black;
+        position: relative;
+        left: 4em;
+    }
+
+    .card5 {
+        width: 30%;
+        height: 22%;
+        box-shadow: 1px 1px 4px -2px black;
+        position: relative;
+        left: 4em;
+    }
+
+    .card6 {
+        width: 30%;
+        height: 22%;
+        box-shadow: 1px 1px 4px -2px black;
+        position: relative;
+        left: 4em;
+    }
+}
+
 .card5 {
     width: 24%;
     height: 20%;
@@ -1710,7 +1737,7 @@ ul {
 /* starting address of school */
 .address-container {
     box-shadow: 1px 1px 4px -2px black;
-    width: 34%;
+    width: 28%;
     height: 55vh;
     margin-top: 100px;
 }
@@ -1731,8 +1758,8 @@ ul {
 }
 
 .address-container .address-box article {
-    font-size: 20px;
-    padding: 12px;
+    font-size: 16px;
+    padding: 24px;
 }
 
 .address-container .address-box {
@@ -1742,12 +1769,28 @@ ul {
 
 .address-container2 {
     box-shadow: 1px 1px 4px -2px black;
-    width: 34%;
+    width: 28%;
     height: 55vh;
     margin-top: 100px;
 }
 
 .address-container2 i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    color: #00dde5;
+}
+
+.address-container3 {
+    box-shadow: 1px 1px 4px -2px black;
+    width: 28%;
+    height: 55vh;
+    margin-top: 100px;
+}
+
+.address-container3 i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1763,8 +1806,8 @@ ul {
 }
 
 .address-container2 .address-box2 article {
-    font-size: 20px;
-    padding: 12px;
+    padding: 34px;
+    font-size: 17px;
 }
 
 .address-container2 .address-box2 {
@@ -1772,12 +1815,75 @@ ul {
     top: 22%;
 }
 
+.address-container3 .address-box3 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-container3 .address-box3 article {
+    padding: 34px;
+    font-size: 17px;
+}
+
+.address-container3 .address-box3 {
+    position: relative;
+    top: 22%;
+}
 
 .address-container:hover,
-.address-container2:hover{
+.address-container2:hover,
+.address-container3:hover {
     background: linear-gradient(#172d54, #1e488a, #111d33);
     transition: 0.3s;
     color: var(--whitecolor);
     padding: 4px;
+}
+
+.main-container-address {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 360px) {
+    .main-container-address {
+        display: block;
+    }
+
+    .address-container,
+    .address-container2,
+    .address-container3 {
+        box-shadow: 1px 1px 4px -2px black;
+        width: 99%;
+        height: 40vh;
+        margin-top: 100px;
+        margin-top: 40px;
+    }
+
+    .address-container:hover,
+    .address-container2:hover,
+    .address-container3:hover {
+        background: linear-gradient(#172d54, #1e488a, #111d33);
+        transition: 0.3s;
+        color: var(--whitecolor);
+        padding: 2px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 915px) {
+
+    .address-container,
+    .address-container2,
+    .address-container3 {
+        box-shadow: 1px 1px 4px -2px black;
+        width: 32%;
+        height: 108vh;
+        margin-top: 100px;
+      }
+
+      .address-container2 .address-box2 article {
+        padding: 21px;
+        font-size: 16px;
+      }
 }
 /* ending address of school */
