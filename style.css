@@ -1690,6 +1690,7 @@ ul {
 }
 
 @media (min-width: 400px) and (max-width: 915px) {
+
     .facilities-container i,
     .facilities-container2 i,
     .facilities-container3 i {
@@ -1703,4 +1704,80 @@ ul {
         padding: 42px;
     }
 }
+
 /* ended facilities of school */
+
+/* starting address of school */
+.address-container {
+    box-shadow: 1px 1px 4px -2px black;
+    width: 34%;
+    height: 55vh;
+    margin-top: 100px;
+}
+
+.address-container i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    color: #d1c200;
+}
+
+.address-container .address-box h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-container .address-box article {
+    font-size: 20px;
+    padding: 12px;
+}
+
+.address-container .address-box {
+    position: relative;
+    top: 22%;
+}
+
+.address-container2 {
+    box-shadow: 1px 1px 4px -2px black;
+    width: 34%;
+    height: 55vh;
+    margin-top: 100px;
+}
+
+.address-container2 i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    color: #00dde5;
+}
+
+.address-container2 .address-box2 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-container2 .address-box2 article {
+    font-size: 20px;
+    padding: 12px;
+}
+
+.address-container2 .address-box2 {
+    position: relative;
+    top: 22%;
+}
+
+
+.address-container:hover,
+.address-container2:hover{
+    background: linear-gradient(#172d54, #1e488a, #111d33);
+    transition: 0.3s;
+    color: var(--whitecolor);
+    padding: 4px;
+}
+/* ending address of school */
