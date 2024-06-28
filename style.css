@@ -19,7 +19,7 @@ body {
 :root {
     --color: #172d54;
     --seccolor: #1f4789;
-    --primcolor: #495057;
+    --primcolor: #16181d;
     --whitecolor: white;
 }
 
@@ -1033,11 +1033,8 @@ ul {
     overflow: hidden;
     text-align: center;
     width: 100%;
-    /* Makes sure the card takes full width */
     max-width: 400px;
-    /* Optional: limits the max-width of the card */
     margin: 10px;
-    /* Adds space between cards */
     background-color: var(--seccolor);
 }
 
@@ -1058,7 +1055,7 @@ ul {
 }
 
 .card-content h3 {
-    margin: 13px;
+    margin: 14px;
     font-size: 18px;
     color: #fff;
 }
@@ -1879,11 +1876,61 @@ ul {
         width: 32%;
         height: 108vh;
         margin-top: 100px;
-      }
+    }
 
-      .address-container2 .address-box2 article {
+    .address-container2 .address-box2 article {
         padding: 21px;
         font-size: 16px;
-      }
+    }
 }
+
 /* ending address of school */
+
+/* started academics of school */
+.academic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.card2 {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    background-color: var(--seccolor);
+}
+
+.card2 img {
+    width: 100%;
+    height: 25em;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.card-content2 {
+    padding: 17px;
+}
+
+.card-content2 h3 {
+    margin: 14px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.academic-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* ended academics of school */
