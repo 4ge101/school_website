@@ -1745,7 +1745,7 @@ ul {
     justify-content: center;
     position: relative;
     top: 10%;
-    color: #d1c200;
+    color: #2bfd5f;
 }
 
 .address-container .address-box h3 {
@@ -1793,7 +1793,7 @@ ul {
     justify-content: center;
     position: relative;
     top: 10%;
-    color: #00dde5;
+    color: #ffdb1b;
 }
 
 .address-container2 .address-box2 h3 {
@@ -1803,8 +1803,8 @@ ul {
 }
 
 .address-container2 .address-box2 article {
-    padding: 34px;
-    font-size: 17px;
+    padding: 20px;
+    font-size: 15px;
 }
 
 .address-container2 .address-box2 {
@@ -1934,3 +1934,14 @@ ul {
 }
 
 /* ended academics of school */
+
+/* live school map */
+.map iframe {
+    width: 100%;
+}
+
+.map {
+    position: relative;
+    top: 20em;
+
+}
