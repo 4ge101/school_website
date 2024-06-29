@@ -62,7 +62,6 @@ h1 {
 .logo {
     height: 60px;
     margin-right: 10px;
-    /* Adjust the margin as needed */
 }
 
 .nav-tabs {
@@ -1852,7 +1851,7 @@ ul {
     .address-container3 {
         box-shadow: 1px 1px 4px -2px black;
         width: 99%;
-        height: 40vh;
+        height: 42vh;
         margin-top: 100px;
         margin-top: 40px;
     }
