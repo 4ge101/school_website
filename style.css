@@ -220,7 +220,7 @@ h1 {
         align-items: center;
         justify-content: space-between;
         margin: auto;
-        width: 89.2%;
+        width: 96.2%;
         height: 80px;
         border-radius: 0 0 15px 15px;
         padding: 0 25px;
@@ -1878,8 +1878,8 @@ ul {
     }
 
     .address-container2 .address-box2 article {
-        padding: 21px;
-        font-size: 16px;
+        padding: 17px;
+        font-size: 14px;
     }
 }
 
