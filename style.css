@@ -50,7 +50,7 @@ h1 {
 .nav-container .nav-tabs a:hover {
     background-color: var(--seccolor);
     border-radius: 35px;
-    padding: 12px;
+    /* padding: 12px; */
 }
 
 .logo-container {
@@ -69,6 +69,8 @@ h1 {
     font-weight: 600;
     font-size: 18px;
     list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-tab:not(:last-child) {
@@ -83,6 +85,9 @@ h1 {
 .nav-tabs li a {
     text-decoration: none;
     color: var(--whitecolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-tab,
@@ -93,6 +98,43 @@ h1 {
 .hidden {
     display: none;
 }
+
+/* dropdown menu */
+.drop-down {
+    position: absolute;
+    padding: 2.5rem 14px;
+    margin: 0.5rem -4.5rem;
+    background: #172d54;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 18px;
+    display: none;
+    width: 15%;
+    height: 26vh;
+}
+
+.services:hover .drop-down {
+    display: block;
+}
+
+.services a {
+    display: flex;
+}
+
+.drop-downicon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+    bottom: 6px;
+}
+
+.services:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
 
 @media screen and (max-width: 800px) {
     .nav-container {
