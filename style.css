@@ -47,10 +47,23 @@ h1 {
     margin: -8px;
 }
 
-.nav-container .nav-tabs a:hover {
-    background-color: var(--seccolor);
-    border-radius: 35px;
-    /* padding: 12px; */
+/* Create the animated underline effect */
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .logo-container {
@@ -111,6 +124,7 @@ h1 {
     width: auto;
     height: auto;
     font-size: 15px;
+    z-index: 10;
 }
 
 .drop-down li a{
@@ -281,7 +295,7 @@ h1 {
         align-items: center;
         justify-content: space-between;
         margin: auto;
-        width: 89.9%;
+        width: auto;
         height: 80px;
         border-radius: 0 0 15px 15px;
         padding: 0 25px;
