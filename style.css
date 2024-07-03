@@ -254,6 +254,22 @@ h1 {
             transform: translateX(0);
         }
     }
+
+    /* drop-down menu */
+    .drop-down {
+        position: absolute;
+        padding: 2.5rem 14px;
+        margin: -0.5rem -0.5rem;
+        background: #172d54;
+        color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        font-size: 18px;
+        display: none;
+        width: auto;
+        height: auto;
+        font-size: 15px;
+      }
 }
 
 @media (min-width: 360px) and (max-width: 915px) {
@@ -265,7 +281,7 @@ h1 {
         align-items: center;
         justify-content: space-between;
         margin: auto;
-        width: 96.2%;
+        width: 89.9%;
         height: 80px;
         border-radius: 0 0 15px 15px;
         padding: 0 25px;
